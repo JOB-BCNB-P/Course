@@ -1,5 +1,5 @@
 // ============== CONFIG ==============
-const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLuAz5Ng2CUKCGIqP5mcgIZRT-zUuyAq895RbfpDvXYk0N9p04GqulSDfFSvDHd7zGbQ/exec';
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyIhcn_TP7TH66NQFKWXQnDXQBmz_jejBKgBQYderALeQUAbML7iyqhKKxGvBnUkGcF2w/exec';
 
 // ============== GLOBAL STATE ==============
 let currentUser = null;
@@ -939,4 +939,5 @@ document.getElementById('addTeacherBtn').addEventListener('click', () => openTea
 // ============== INITIAL LOAD ==============
 // โหลดข้อมูล (เพื่อให้ login ใช้ข้อมูล user ใน sheet ได้ ถ้ามี)
 loadAllData();
+
 
