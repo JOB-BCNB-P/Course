@@ -939,3 +939,4 @@ document.getElementById('addTeacherBtn').addEventListener('click', () => openTea
 // ============== INITIAL LOAD ==============
 // โหลดข้อมูล (เพื่อให้ login ใช้ข้อมูล user ใน sheet ได้ ถ้ามี)
 loadAllData();
+
