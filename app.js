@@ -91,34 +91,8 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
       });
 
       showDashboard();
-    } else if (email === 'admin@system.com' && password === 'admin123') {
-      // Default admin login
-      currentUser = {
-        email: email,
-        fullName: 'ผู้ดูแลระบบ',
-        position: 'ผู้ดูแลระบบ'
-      };
-      isAdmin = true;
-
-      await Swal.fire({
-        icon: 'success',
-        title: 'เข้าสู่ระบบสำเร็จ!',
-        text: 'ยินดีต้อนรับผู้ดูแลระบบ',
-        timer: 1500,
-        showConfirmButton: false
-      });
-
-      showDashboard();
-    } else {
-      Swal.fire({
-        icon: 'error',
-        title: 'เข้าสู่ระบบไม่สำเร็จ',
-        text: 'อีเมลหรือรหัสผ่านไม่ถูกต้อง'
-      });
-    }
-  }, 800);
-});
-
+    } 
+   
 document.getElementById('guestBtn').addEventListener('click', async () => {
   Swal.fire({
     title: 'กำลังเข้าสู่ระบบ...',
@@ -940,6 +914,7 @@ document.getElementById('addTeacherBtn').addEventListener('click', () => openTea
 // ============== INITIAL LOAD ==============
 // โหลดข้อมูล (เพื่อให้ login ใช้ข้อมูล user ใน sheet ได้ ถ้ามี)
 loadAllData();
+
 
 
 
